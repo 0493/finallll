@@ -104,13 +104,30 @@
 					<header>
 						<h2>Investigación de Operaciones I</h2>
 					</header>
-					<div class="container">
-						
-					</div>
-					<footer>
+					<div class="tabCurs">
+								<nav>
+									<ul>
+										<button onclick="tab1()" class="button scrolly">
+											Tutorial Lingo
+										</button>
+										<button onclick="tab2()" class="button scrolly">
+											Plan agregado
+										</button>
+									</ul>
+								</nav>
+							</div>
+					<span id="tab2">
+						<p>PC 3 –Plan Agregado <br>	
+En esta oportunidad ,veremos el tema relacionado a lo que es un Plan Agregado  ,para lo cual usaremos un ejemplo para explicar de manera mas detallada. <br>
+Acontnuacion les comparto la informacion del caso  , un concepto previo  y un link con el video tutorial de la solucion </p>
+						<iframe src="https://docs.google.com/a/utec.edu.pe/presentation/d/1dFPzRt5g6s3qSdlQ6MF-p43Eku8v6tfjhBx4bOuxAVE/embed?start=false&loop=false&delayms=3000" frameborder="0" width="700" height="549" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> <br>
+						<a href="https://www.youtube.com/watch?v=BL3OBJjKBAg" class="button big scrolly">Solución</a>
+					</span>
+					
+					<span id="tab1">
 						<p>En este curso haremos uso de los diferentes modelos matemáticos con el objetivo de realizar un proceso <br>de toma de decisiones , teniendo en cuenta  la escasez de recursos   para determinar cómo se puede <br>optimizar o maximizar beneficios , como también establecer la minimización de los costos</p>
-						<a href="https://www.youtube.com/watch?v=pzmIkqT0cbo " class="button big scrolly">Tutorial de Lingo</a>
-					</footer>
+						<a href="https://www.youtube.com/watch?v=pzmIkqT0cbo" class="button big scrolly">Tutorial de Lingo</a>
+					</span>
 				</article>
 			</div>
 
@@ -159,4 +176,26 @@
 			</div>
 
 	</body>
+	<script>
+								function tab1() 
+								{
+   		 						document.getElementById("tab1").style.display = "inline-block";
+   		 						document.getElementById("tab2").style.display = "none";
+								}
+								function tab2() 
+								{
+   		 						document.getElementById("tab1").style.display = "none";
+   		 						document.getElementById("tab2").style.display = "inline-block";
+								}
+							</script>
+							<style type="text/css">
+							#tab1
+	{
+		display: inline-block;
+	}
+	#tab2
+	{
+		display: none;
+	}
+							</style>
 </html>
